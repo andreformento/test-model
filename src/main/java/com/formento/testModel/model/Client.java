@@ -1,6 +1,7 @@
 package com.formento.testModel.model;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 public class Client implements Serializable {
@@ -8,6 +9,7 @@ public class Client implements Serializable {
     private Integer id;
     private String name;
     private Date birthdate;
+    private Collection<Address> addresses;
 
     public Integer getId() {
         return id;
@@ -31,6 +33,14 @@ public class Client implements Serializable {
 
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
+    }
+
+    public Collection<Address> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(Collection<Address> addresses) {
+        this.addresses = addresses;
     }
 
 }

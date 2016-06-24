@@ -11,7 +11,7 @@ import com.openpojo.validation.test.impl.SetterTester;
 import org.junit.Before;
 import org.junit.Test;
 
-public class AddressTest {
+public class PojoTest {
 
     // The package to test
     private static final String POJO_PACKAGE = "com.formento.testModel.model";

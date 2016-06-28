@@ -1,4 +1,4 @@
-package com.formento.testModel;
+package com.formento.one.hundred;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.formento.testModel;
+package com.formento.one.hundred;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.formento.testModel.model;
+package com.formento.one.hundred.model;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -41,6 +41,36 @@ public class Client implements Serializable {
 
     public void setAddresses(Collection<Address> addresses) {
         this.addresses = addresses;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", birthdate=" + birthdate +
+                ", addresses=" + addresses +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Client client = (Client) o;
+
+        return id != null ? id.equals(client.id) : client.id == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 
 }
